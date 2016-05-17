@@ -6,6 +6,12 @@
 # make all warmups 10s and make first standard 11 runs with awk
 
 infile="$1"
+if [ -e "$infile" ]
+then
+	echo "$infile doesn't exist!"
+	exit
+fi
+
 outfile="${infile%.*}.txt"
 
 if [ -e "$outfile" ]
