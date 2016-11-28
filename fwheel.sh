@@ -23,5 +23,5 @@ fi
 # convert to tsv
 /usr/local/bin/in2csv $infile | /usr/local/bin/csvformat -T | \
 awk '{if (NR==1 && /^\*/) next};1' | \
-awk -F"\t" 'NR!=1 {$7="10";}1' OFS="\t" | \
-awk -F"\t" '/OX-I/ && !x {x=($8="11");}1' OFS="\t" > $outfile
+awk -F"\t" 'NR!=1 {$7="10";}1' OFS="\t" \
+> $outfile
