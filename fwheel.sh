@@ -3,7 +3,10 @@
 # Format raw wheeler output for USAMS
 # convert xlsx wheelfiles to tsv using csvkit
 # remove first line if neccesary
-# make all warmups 10s and make first standard 11 runs with awk
+# make all warmups 10s
+
+# TODO: change group numbers
+# TODO: correct mislabelled type
 
 infile="$1"
 if [ ! -e "$infile" ]
