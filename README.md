@@ -11,3 +11,13 @@ such using awk
 
 Formats and prints wheelfiles using csvkit, awk, and lp.
 
+## FixBadWheelPos.md
+
+Instructions for fixing skips or other problems with a results file using vim.
+
+## cutwheel.sh
+
+Script to make an easy to read results file for finding skips, etc.
+
+Other scripts are experiments, but worth keeping as examples.
+

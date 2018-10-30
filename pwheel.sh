@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# format and print out wheelfile names on STDIN
+# Print formatted wheelfile 
+# Wheelfile name on STDIN
 
 awk -F "\t" 'BEGIN { OFS=FS }; { $2=substr($2, 1, 24); print }' $1 | \
 	csvlook -t |\
