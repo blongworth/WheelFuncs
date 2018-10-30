@@ -4,4 +4,4 @@
 
 awk -F "\t" 'BEGIN { OFS=FS }; { $2=substr($2, 1, 24); print }' $1 | \
 	csvlook -t |\
-	pr --length=63 --header=$1 | lpr -ocpi=13
+	pr --length=63 --header=$1 | lpr -ocpi=14
